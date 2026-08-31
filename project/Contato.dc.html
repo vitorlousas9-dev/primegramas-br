@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="contato" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-20) 0 var(--section-y-tight)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-5);max-width:820px">
+    <span class="pg-eyebrow">Contato</span>
+    <h1 style="font-size:var(--text-display-2);margin:0;font-weight:var(--fw-light);line-height:var(--lh-snug)">Peça seu <span style="font-weight:var(--fw-bold)">orçamento</span></h1>
+    <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">Conte a finalidade, a metragem aproximada e as condições do piso. Respondemos por WhatsApp, telefone ou e-mail — nunca deixamos você sem resposta.</p>
+  </div>
+</section>
+
+<section style="padding:0 0 var(--section-y)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:var(--space-6);align-items:start">
+
+    <div style="background:var(--surface-sunken);border:1px solid var(--border-subtle);border-radius:var(--radius-blade);padding:var(--space-10);display:grid;gap:var(--space-5)">
+      <span class="pg-eyebrow">Formulário de orçamento</span>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-5)">
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Input" label="Nome" placeholder="Seu nome completo" hint-size="100%,72px"></x-import>
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Input" label="Telefone / WhatsApp" placeholder="(11) 90000-0000" hint-size="100%,72px"></x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-5)">
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Input" label="E-mail" placeholder="nome@empresa.com.br" hint-size="100%,72px"></x-import>
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Input" label="Cidade / UF" placeholder="São Paulo — SP" hint-size="100%,72px"></x-import>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-5)">
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Select" label="Finalidade" placeholder="Selecione o uso" options="{{ usos }}" hint-size="100%,72px"></x-import>
+        <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Input" label="Metragem aproximada" placeholder="120" suffix="m²" hint="Se não souber, informamos na visita técnica." hint-size="100%,72px"></x-import>
+      </div>
+      <x-import component-from-global-scope="PrimegramasDesignSystem_83b74f.Textarea" label="Sobre o espaço" placeholder="Instalação nova ou troca, condição do piso (concreto, brita, terra), prazo desejado." rows="4" hint-size="100%,140px"></x-import>
+      <button style="height:var(--control-h-lg);border:0;border-radius:var(--radius-pill);background:var(--green-500);color:#fff;font-family:var(--font-body);font-size:var(--text-base);font-weight:var(--fw-semibold);cursor:pointer;box-shadow:var(--shadow-brand)" style-hover="background:var(--green-600)">Solicitar orçamento</button>
+      <p style="font-size:var(--text-xs);color:var(--text-muted);line-height:var(--lh-relaxed)">Proposta com validade de 7 dias. Aceitamos diversas formas de pagamento e parcelamento.</p>
+    </div>
+
+    <div style="display:grid;gap:var(--space-6);align-content:start">
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-8);display:grid;gap:var(--space-5)">
+        <span class="pg-eyebrow">Fale direto com o comercial</span>
+        <a href="https://wa.me/551141124329" style="border:0;display:flex;align-items:center;gap:var(--space-4)">
+          <span style="background:var(--surface-sunken);border-radius:var(--radius-md);padding:var(--space-3);display:grid;place-items:center">
+            <img src="assets/whatsapp-logo-green.png" alt="" style="width:20px;height:20px">
+          </span>
+          <span style="display:grid;gap:2px">
+            <span style="font-size:var(--text-sm);font-weight:var(--fw-semibold);color:var(--text-strong)">WhatsApp</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted)">(11) 4112-4329</span>
+          </span>
+        </a>
+        <a href="tel:+551147713609" style="border:0;display:flex;align-items:center;gap:var(--space-4)">
+          <span style="background:var(--surface-sunken);border-radius:var(--radius-md);padding:var(--space-3);display:grid;place-items:center">
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="phone" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+          </span>
+          <span style="display:grid;gap:2px">
+            <span style="font-size:var(--text-sm);font-weight:var(--fw-semibold);color:var(--text-strong)">Telefone</span>
+            <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-muted)">(11) 4771-3609</span>
+          </span>
+        </a>
+        <a href="mailto:comercial@primegramas.com.br" style="border:0;display:flex;align-items:center;gap:var(--space-4)">
+          <span style="background:var(--surface-sunken);border-radius:var(--radius-md);padding:var(--space-3);display:grid;place-items:center">
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="mail" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+          </span>
+          <span style="display:grid;gap:2px">
+            <span style="font-size:var(--text-sm);font-weight:var(--fw-semibold);color:var(--text-strong)">E-mail</span>
+            <span style="font-size:var(--text-xs);color:var(--text-muted)">comercial@primegramas.com.br</span>
+          </span>
+        </a>
+        <a href="https://www.primegramas.com.br" style="border:0;display:flex;align-items:center;gap:var(--space-4)">
+          <span style="background:var(--surface-sunken);border-radius:var(--radius-md);padding:var(--space-3);display:grid;place-items:center">
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+          </span>
+          <span style="display:grid;gap:2px">
+            <span style="font-size:var(--text-sm);font-weight:var(--fw-semibold);color:var(--text-strong)">Site</span>
+            <span style="font-size:var(--text-xs);color:var(--text-muted)">www.primegramas.com.br</span>
+          </span>
+        </a>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-5)">
+        <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-3);align-content:start">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="map-pin" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+          <h2 style="font-size:var(--text-heading-3);margin:0">Escritório São Paulo</h2>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Edifício Comercial Start<br>Estrada São Francisco 1820, sala 306<br>Taboão da Serra — SP</p>
+        </div>
+        <div style="background:var(--surface-card-alt);border:1px solid var(--soil-200);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-3);align-content:start">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="map-pin" size="20" color="var(--soil-600)" hint-size="20px,20px"></x-import>
+          <h2 style="font-size:var(--text-heading-3);margin:0">Unidade Portugal</h2>
+          <p style="font-size:var(--text-sm);color:var(--soil-700);line-height:var(--lh-relaxed)">Estrada Malveira da Serra 1920<br>Lisboa — Cascais</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      usos: ['Jardim ou área de lazer', 'Condomínio', 'Escola ou creche', 'Playground', 'Quadra poliesportiva', 'Campo de futebol', 'Evento ou vitrine', 'Outro']
+    };
+  }
+}
+</script>
+</body>
+</html>

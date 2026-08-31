@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+  <script src="image-slot.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="obras" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-20) 0 var(--space-16)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-5);max-width:760px">
+    <span class="pg-eyebrow">Obras</span>
+    <h1 style="font-size:var(--text-display-2);margin:0;font-weight:var(--fw-light);line-height:var(--lh-snug)">Projetos <span style="font-weight:var(--fw-bold)">entregues</span></h1>
+    <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">Uma seleção de obras de instalação de grama sintética em condomínios, escolas, clubes e residências.</p>
+  </div>
+</section>
+
+<section style="padding:0 0 var(--section-y)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-5)">
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-1" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-2" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-blade);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-3" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-4" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-5" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-6" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-7" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-8" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+    <div style="position:relative;aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)">
+      <image-slot id="obra-9" shape="rect" fit="cover" placeholder="Foto da obra"></image-slot>
+    </div>
+  </div>
+</section>
+
+<dc-import name="QuoteCTA" hint-size="100%,420px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+  <script src="image-slot.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="produtos" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-12) 0 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline)">
+    <div style="display:flex;gap:var(--space-2);align-items:center;font-size:var(--text-sm);color:var(--text-muted);flex-wrap:wrap">
+      <a href="Produtos.dc.html" style="border:0;color:var(--text-muted);font-weight:var(--fw-semibold)" style-hover="color:var(--green-700)">Produtos</a>
+      <span>·</span>
+      <a href="ProdutosEsportiva.dc.html" style="border:0;color:var(--text-muted);font-weight:var(--fw-semibold)" style-hover="color:var(--green-700)">Linha Esportiva</a>
+      <span>·</span>
+      <span style="color:var(--text-strong);font-weight:var(--fw-semibold)">Campos de Futebol e Society</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding:var(--space-6) 0 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-5);max-width:760px">
+    <span class="pg-eyebrow">Linha Esportiva · Aplicação</span>
+    <h1 style="font-family:var(--font-condensed);font-size:var(--text-display-2);margin:0;font-weight:var(--fw-bold);line-height:1;text-transform:uppercase;letter-spacing:0">Campos de Futebol e Society</h1>
+    <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">Campos de futebol e society exigem um gramado com boa absorção de impacto e drenagem rápida, para manter a jogabilidade mesmo depois da chuva. A altura de fio recomendada para essa aplicação é de 40 a 60mm.</p>
+  </div>
+</section>
+
+<section style="padding:var(--space-10) 0 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline)">
+    <div style="position:relative;height:400px;border-radius:var(--radius-blade);overflow:hidden;box-shadow:var(--shadow-md)">
+      <image-slot id="lugar-campos" shape="rect" fit="cover" placeholder="Foto — campo de futebol society com grama esportiva"></image-slot>
+    </div>
+  </div>
+</section>
+
+<section style="padding:var(--section-y) 0 var(--space-16)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-8)">
+    <span class="pg-eyebrow">Benefícios técnicos</span>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-5)">
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <span style="width:44px;height:44px;border-radius:var(--radius-pill);background:var(--surface-brand-soft);display:grid;place-items:center">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="droplets" size="22" color="var(--green-700)" hint-size="22px,22px"></x-import>
+        </span>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Drenagem rápida</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Absorção rápida de água, evita poças e garante jogabilidade mesmo na chuva.</p>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <span style="width:44px;height:44px;border-radius:var(--radius-pill);background:var(--surface-brand-soft);display:grid;place-items:center">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="ruler" size="22" color="var(--green-700)" hint-size="22px,22px"></x-import>
+        </span>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Altura de fio de 40 a 60mm</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Faixa recomendada para campos de futebol society, priorizando amortecimento e sensação de jogo.</p>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <span style="width:44px;height:44px;border-radius:var(--radius-pill);background:var(--surface-brand-soft);display:grid;place-items:center">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="shield-check" size="22" color="var(--green-700)" hint-size="22px,22px"></x-import>
+        </span>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Preenchimento para amortecimento</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Areia, borracha ou outros materiais garantem estabilidade e uma sensação de jogo mais próxima do gramado natural.</p>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-blade);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <span style="width:44px;height:44px;border-radius:var(--radius-pill);background:var(--green-500);display:grid;place-items:center">
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="sun" size="22" color="#fff" hint-size="22px,22px"></x-import>
+        </span>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Resistência U.V.</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Tratamento contra desbotamento pela exposição solar constante do campo.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-4);background:var(--surface-sunken);border-radius:var(--radius-lg);padding:var(--space-6)">
+      <div style="display:flex;align-items:center;gap:var(--space-2)">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="users" size="18" color="var(--green-700)" hint-size="18px,18px"></x-import>
+        <span class="pg-eyebrow">Ideal para</span>
+      </div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap">
+        <span style="font-size:var(--text-xs);color:var(--text-body);background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-pill);padding:6px 12px">Donos de campos society</span>
+        <span style="font-size:var(--text-xs);color:var(--text-body);background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-pill);padding:6px 12px">Escolinhas de futebol</span>
+        <span style="font-size:var(--text-xs);color:var(--text-body);background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-pill);padding:6px 12px">Clubes</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<dc-import name="QuoteCTA" hint-size="100%,420px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

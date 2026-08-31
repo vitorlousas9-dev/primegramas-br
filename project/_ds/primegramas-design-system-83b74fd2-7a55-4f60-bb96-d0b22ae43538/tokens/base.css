@@ -1,0 +1,13 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:var(--lh-normal);color:var(--text-body);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:var(--fw-bold);line-height:var(--lh-snug);letter-spacing:var(--ls-display);color:var(--text-strong);margin:0}
+/* Reference treatment: one headline, two weights — wrap the emphasised words in .pg-strong */
+.pg-light{font-weight:var(--fw-light)}
+.pg-strong{font-weight:var(--fw-bold)}
+p{margin:0;text-wrap:pretty}
+a{color:var(--text-link);text-decoration:none;border-bottom:1px solid color-mix(in oklab,var(--green-500) 45%,transparent);transition:color var(--dur-fast) var(--ease-standard),border-color var(--dur-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover);border-bottom-color:var(--green-600)}
+:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.pg-eyebrow{font-family:var(--font-body);font-weight:var(--fw-bold);font-size:var(--text-xs);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-accent)}
+.pg-tagline{font-family:var(--font-body);font-weight:var(--fw-medium);font-size:var(--text-xs);letter-spacing:var(--ls-tagline);text-transform:uppercase;color:var(--text-muted)}
+.pg-container{max-width:var(--container-max);margin:0 auto;padding-inline:var(--gutter-inline)}

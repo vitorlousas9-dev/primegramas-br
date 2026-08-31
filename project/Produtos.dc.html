@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+  <script src="image-slot.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="produtos" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-20) 0 var(--space-16)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-5);max-width:820px">
+    <span class="pg-eyebrow">Linha de produtos</span>
+    <h1 style="font-size:var(--text-display-2);margin:0;font-weight:var(--fw-light);line-height:var(--lh-snug)">A grama certa para cada espaço da sua <span style="font-weight:var(--fw-bold)">casa, condomínio ou clube</span></h1>
+    <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">Do jardim ao campo society, temos uma linha pensada pra cada tipo de uso — sempre com durabilidade comprovada e sem a manutenção que a grama natural exige.</p>
+  </div>
+</section>
+
+<section style="padding:0 0 var(--section-y)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6)">
+    <a href="ProdutosDecorativa.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+      <div style="position:relative;height:240px">
+        <image-slot id="prod-dec" shape="rect" fit="cover" placeholder="Foto — jardim residencial com grama decorativa"></image-slot>
+      </div>
+      <div style="padding:var(--space-6);display:grid;gap:var(--space-3)">
+        <span class="pg-eyebrow">6 aplicações</span>
+        <h2 style="font-size:var(--text-heading-1);margin:0;font-weight:var(--fw-bold)">Linha Decorativa</h2>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Visual natural, resistente e macia. Ideal para áreas de lazer, jardins e paisagismo.</p>
+        <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-1)">
+          <span style="font-family:var(--font-mono);font-size:var(--text-2xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:5px 10px">12 a 30mm</span>
+          <span style="font-family:var(--font-mono);font-size:var(--text-2xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:5px 10px">3 a 10 anos</span>
+        </div>
+        <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver aplicações
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+        </span>
+      </div>
+    </a>
+    <a href="ProdutosEsportiva.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+      <div style="position:relative;height:240px">
+        <image-slot id="prod-esp" shape="rect" fit="cover" placeholder="Foto — campo society ou quadra poliesportiva"></image-slot>
+      </div>
+      <div style="padding:var(--space-6);display:grid;gap:var(--space-3)">
+        <span class="pg-eyebrow">3 aplicações</span>
+        <h2 style="font-size:var(--text-heading-1);margin:0;font-weight:var(--fw-bold)">Linha Esportiva</h2>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Alta resistência e performance para prática esportiva. Fios projetados para absorção de impacto e durabilidade.</p>
+        <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-top:var(--space-1)">
+          <span style="font-family:var(--font-mono);font-size:var(--text-2xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:5px 10px">20 a 50mm</span>
+          <span style="font-family:var(--font-mono);font-size:var(--text-2xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:5px 10px">drenagem rápida</span>
+        </div>
+        <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver aplicações
+          <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+        </span>
+      </div>
+    </a>  </div>
+</section>
+
+<section style="background:var(--surface-sunken);padding:var(--section-y-tight) 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--space-8)">
+    <div style="display:grid;gap:var(--space-2)">
+      <span class="pg-eyebrow">Base</span>
+      <p style="font-size:var(--text-sm);color:var(--text-body);line-height:var(--lh-relaxed)">Polipropileno com 2 a 3 camadas de látex, para aderência ao solo e sustentação dos fios.</p>
+    </div>
+    <div style="display:grid;gap:var(--space-2)">
+      <span class="pg-eyebrow">Fio</span>
+      <p style="font-size:var(--text-sm);color:var(--text-body);line-height:var(--lh-relaxed)">Polietileno virgem, sem material reciclado, ao contrário de muitos importados.</p>
+    </div>
+    <div style="display:grid;gap:var(--space-2)">
+      <span class="pg-eyebrow">Proteção U.V.</span>
+      <p style="font-size:var(--text-sm);color:var(--text-body);line-height:var(--lh-relaxed)">Tratamento contra desbotamento pela exposição solar.</p>
+    </div>
+    <div style="display:grid;gap:var(--space-2)">
+      <span class="pg-eyebrow">Garantia</span>
+      <p style="font-size:var(--text-sm);color:var(--text-body);line-height:var(--lh-relaxed)">De 1 a 3 anos conforme o modelo, com laudo técnico e certificações.</p>
+    </div>
+  </div>
+</section>
+
+<dc-import name="QuoteCTA" hint-size="100%,420px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

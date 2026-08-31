@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+  <script src="image-slot.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="produtos" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-16) 0 var(--space-16)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline)">
+    <div style="display:flex;gap:var(--space-2);align-items:center;font-size:var(--text-sm);color:var(--text-muted);margin-bottom:var(--space-8)">
+      <a href="Produtos.dc.html" style="border:0;color:var(--text-muted);font-weight:var(--fw-semibold)" style-hover="color:var(--green-700)">Produtos</a>
+      <span>·</span>
+      <span style="color:var(--text-strong);font-weight:var(--fw-semibold)">Linha Decorativa</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-12);align-items:end">
+      <div style="display:grid;gap:var(--space-5)">
+        <span class="pg-eyebrow">Linha Decorativa · 6 aplicações</span>
+        <h1 style="font-size:var(--text-display-2);margin:0;font-weight:var(--fw-light);line-height:var(--lh-snug)">Visual natural, <span style="font-weight:var(--fw-bold)">resistente e macia</span></h1>
+        <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">Ideal para áreas de lazer, jardins e paisagismo. Aplicações: residências, áreas comerciais, condomínios.</p>
+      </div>
+      <div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+        <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:8px 14px">12mm a 30mm</span>
+        <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:8px 14px">garantia 1 a 3 anos</span>
+        <span style="font-family:var(--font-mono);font-size:var(--text-xs);color:var(--green-800);background:var(--green-50);border-radius:var(--radius-pill);padding:8px 14px">3 a 10 anos de vida útil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 var(--section-y)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-10)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--space-6)">
+
+      <a href="LugarJardins.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-jardins" shape="rect" fit="cover" placeholder="Foto — jardim residencial com grama decorativa"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Jardins e Paisagismo</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Verde o ano todo, sem rega e sem corte, em qualquer projeto de paisagismo.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+      <a href="LugarPlaygrounds.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-playgrounds" shape="rect" fit="cover" placeholder="Foto — playground com grama sintética"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Playgrounds e Áreas Infantis</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Superfície macia e seca, com amortecimento para um playground mais seguro.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+      <a href="LugarCondominios.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-condominios" shape="rect" fit="cover" placeholder="Foto — área comum de condomínio com grama sintética"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Condomínios e Áreas Comuns</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Acaba com a lama da chuva nas áreas comuns do condomínio.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+      <a href="LugarEventos.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-eventos" shape="rect" fit="cover" placeholder="Foto — decoração de evento com grama sintética colorida"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Eventos e Decoração Temática</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Cores vibrantes e instalação temporária para decoração de eventos.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+      <a href="LugarPiscinas.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-piscinas" shape="rect" fit="cover" placeholder="Foto — borda de piscina com grama sintética"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Bordas de Piscina</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Conforto ao toque descalço e resistência à umidade constante.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+      <a href="LugarVitrines.dc.html" style="border:0;display:block;background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);transition:box-shadow 220ms var(--ease-standard),transform 220ms var(--ease-standard)" style-hover="box-shadow:var(--shadow-md);transform:translateY(-2px)">
+        <div style="position:relative;height:200px">
+          <image-slot id="grid-vitrines" shape="rect" fit="cover" placeholder="Foto — vitrine comercial com grama sintética"></image-slot>
+        </div>
+        <div style="padding:var(--space-6);display:grid;gap:var(--space-2)">
+          <h3 style="font-size:var(--text-heading-2);margin:0;font-weight:var(--fw-bold)">Vitrines e Ambientes Comerciais</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Um ponto verde de baixa manutenção para lojas e escritórios.</p>
+          <span style="display:flex;align-items:center;gap:8px;font-family:var(--font-body);font-size:var(--text-sm);font-weight:var(--fw-bold);color:var(--green-700);margin-top:var(--space-2)">Ver mais
+            <x-import component-from-global-scope="PGIcon" from="./icon.js" name="arrow-right" size="16" color="var(--green-700)" hint-size="16px,16px"></x-import>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<dc-import name="QuoteCTA" hint-size="100%,420px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

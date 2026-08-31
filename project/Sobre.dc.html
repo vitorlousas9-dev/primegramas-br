@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/styles.css">
+  <script src="_ds/primegramas-design-system-83b74fd2-7a55-4f60-bb96-d0b22ae43538/_ds_bundle.js"></script>
+  <script src="icon.js"></script>
+  <script src="image-slot.js"></script>
+</helmet>
+<dc-import name="SiteHeader" active="sobre" hint-size="100%,78px"></dc-import>
+
+<section style="padding:var(--space-20) 0 var(--section-y)">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-16);align-items:center">
+    <div style="display:grid;gap:var(--space-5);align-content:start">
+      <span class="pg-eyebrow">Quem somos</span>
+      <h1 style="font-size:var(--text-display-2);margin:0;font-weight:var(--fw-light);line-height:var(--lh-snug)">16 anos de <span style="font-weight:var(--fw-bold)">grama sintética instalada</span></h1>
+      <p style="font-size:var(--text-lg);color:var(--text-body);line-height:var(--lh-relaxed)">A Primegramas é referência no fornecimento e instalação de grama sintética de alta qualidade. Com uma trajetória sólida, estamos há 16 anos atendendo a diversos setores, oferecendo soluções práticas e personalizadas para cada cliente. Nossa missão é transformar espaços com um produto durável, sustentável e com a aparência natural que você precisa.</p>
+    </div>
+    <div style="position:relative;height:420px;border-radius:var(--radius-blade);overflow:hidden;box-shadow:var(--shadow-md)">
+      <image-slot id="sobre-equipe" shape="rect" fit="cover" placeholder="Foto da equipe técnica ou de uma obra entregue"></image-slot>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-sunken);padding:var(--section-y) 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-12)">
+    <div style="display:grid;gap:var(--space-3);max-width:620px">
+      <span class="pg-eyebrow">Missão e valores</span>
+      <h2 style="font-size:var(--text-display-3);margin:0;font-weight:var(--fw-light)">O que orienta <span style="font-weight:var(--fw-bold)">cada projeto</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-5)">
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="shield-check" size="24" color="var(--green-600)" hint-size="24px,24px"></x-import>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Excelência</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Compromisso com a excelência em cada projeto.</p>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="sprout" size="24" color="var(--green-600)" hint-size="24px,24px"></x-import>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Sustentabilidade</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Foco na sustentabilidade, reduzindo o impacto ambiental.</p>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-blade);box-shadow:var(--shadow-sm);padding:var(--space-6);display:grid;gap:var(--space-4);align-content:start">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="message-circle" size="24" color="var(--green-600)" hint-size="24px,24px"></x-import>
+        <h3 style="font-size:var(--text-heading-3);margin:0">Atendimento</h3>
+        <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Dedicação ao atendimento personalizado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:var(--section-y) 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:var(--space-16)">
+    <div style="display:grid;gap:var(--space-5);align-content:start">
+      <span class="pg-eyebrow">Nossos diferenciais</span>
+      <h2 style="font-size:var(--text-display-3);margin:0;font-weight:var(--fw-light)">Por que os projetos <span style="font-weight:var(--fw-bold)">voltam para nós</span></h2>
+      <div style="position:relative;height:280px;border-radius:var(--radius-lg);overflow:hidden;margin-top:var(--space-4)">
+        <image-slot id="sobre-diferenciais" shape="rect" fit="cover" placeholder="Foto — instalação em condomínio ou quadra"></image-slot>
+      </div>
+    </div>
+    <div style="display:grid;gap:0;align-content:start">
+      <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-6) 0;border-bottom:1px solid var(--border-subtle)">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="message-circle" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+        <div style="display:grid;gap:var(--space-1)">
+          <h3 style="font-size:var(--text-heading-3);margin:0">Atendimento personalizado</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Cada cliente fala com quem entende do produto, do primeiro contato ao pós-venda.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-6) 0;border-bottom:1px solid var(--border-subtle)">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="layers" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+        <div style="display:grid;gap:var(--space-1)">
+          <h3 style="font-size:var(--text-heading-3);margin:0">Equipe técnica especializada</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Da preparação da base à aplicação do gramado, em obras de pequeno e grande porte.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-6) 0;border-bottom:1px solid var(--border-subtle)">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="shield-check" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+        <div style="display:grid;gap:var(--space-1)">
+          <h3 style="font-size:var(--text-heading-3);margin:0">Alta durabilidade e garantia</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Produtos com garantia de 1 a 3 anos e vida útil de 3 a 10 anos, conforme o modelo.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:var(--space-4);align-items:flex-start;padding:var(--space-6) 0">
+        <x-import component-from-global-scope="PGIcon" from="./icon.js" name="trophy" size="20" color="var(--green-600)" hint-size="20px,20px"></x-import>
+        <div style="display:grid;gap:var(--space-1)">
+          <h3 style="font-size:var(--text-heading-3);margin:0">Casos de sucesso e recomendação</h3>
+          <p style="font-size:var(--text-sm);color:var(--text-muted);line-height:var(--lh-relaxed)">Amplos casos de sucesso e recomendação no mercado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-inverse);padding:var(--section-y) 0">
+  <div style="max-width:var(--container-max);margin:0 auto;padding:0 var(--gutter-inline);display:grid;gap:var(--space-12)">
+    <div style="display:grid;gap:var(--space-3);max-width:620px">
+      <span class="pg-eyebrow" style="color:var(--green-400)">Motivos para nos contratar</span>
+      <h2 style="color:#fff;font-size:var(--text-display-3);margin:0;font-weight:var(--fw-light)">Três razões, <span style="font-weight:var(--fw-bold)">todas verificáveis</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-8)">
+      <div style="display:grid;gap:var(--space-3);align-content:start;border-top:2px solid var(--green-500);padding-top:var(--space-6)">
+        <span style="font-family:var(--font-display);font-size:var(--text-display-2);font-weight:var(--fw-bold);color:#fff;line-height:1">16 anos</span>
+        <h3 style="color:#fff;font-size:var(--text-heading-3);margin:0">Pioneiros no mercado</h3>
+        <p style="font-size:var(--text-sm);color:var(--stone-400);line-height:var(--lh-relaxed)">16 anos de tradição, qualidade e confiança.</p>
+      </div>
+      <div style="display:grid;gap:var(--space-3);align-content:start;border-top:2px solid var(--green-500);padding-top:var(--space-6)">
+        <span style="font-family:var(--font-display);font-size:var(--text-display-2);font-weight:var(--fw-bold);color:#fff;line-height:1">+5.000</span>
+        <h3 style="color:#fff;font-size:var(--text-heading-3);margin:0">Sucesso comprovado</h3>
+        <p style="font-size:var(--text-sm);color:var(--stone-400);line-height:var(--lh-relaxed)">Mais de 5.000 clientes satisfeitos.</p>
+      </div>
+      <div style="display:grid;gap:var(--space-3);align-content:start;border-top:2px solid var(--green-500);padding-top:var(--space-6)">
+        <span style="font-family:var(--font-display);font-size:var(--text-display-2);font-weight:var(--fw-bold);color:#fff;line-height:1">Laudo</span>
+        <h3 style="color:#fff;font-size:var(--text-heading-3);margin:0">Qualidade excepcional</h3>
+        <p style="font-size:var(--text-sm);color:var(--stone-400);line-height:var(--lh-relaxed)">Todos os produtos com laudos técnicos e certificações.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="QuoteCTA" hint-size="100%,420px"></dc-import>
+<dc-import name="SiteFooter" hint-size="100%,520px"></dc-import>
+</x-dc>
+</body>
+</html>

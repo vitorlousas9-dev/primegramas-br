@@ -1,0 +1,86 @@
+:root{
+  /* --- Brand anchors (from the logo, do not alter) --- */
+  --green-500:#91C038;
+  --gray-500:#99999B;
+
+  /* --- Green ramp: built around --green-500 --- */
+  --green-50:#F4F9EA;
+  --green-100:#E6F2CE;
+  --green-200:#CDE5A2;
+  --green-300:#B3D673;
+  --green-400:#A2CB53;
+  --green-600:#7BA62C;
+  --green-700:#628621;
+  --green-800:#4A661A;
+  --green-900:#324613;
+  --green-950:#1E2C0C;
+
+  /* --- Neutral stone ramp: greyed, slightly cool, tied to --gray-500 --- */
+  --stone-50:#F7F7F7;
+  --stone-100:#EFEFEF;
+  --stone-200:#E2E2E3;
+  --stone-300:#CCCCCE;
+  --stone-400:#B3B3B5;
+  --stone-600:#7C7C7E;
+  --stone-700:#5E5E60;
+  --stone-800:#414143;
+  --stone-900:#2A2A2C;
+  --stone-950:#17171A;
+
+  /* --- Soil: warm earthy support, secondary to green + grey --- */
+  --soil-50:#F8F5F1;
+  --soil-100:#EFE8DF;
+  --soil-200:#DED2C2;
+  --soil-300:#C4B199;
+  --soil-400:#A88E70;
+  --soil-500:#8C7052;
+  --soil-600:#6F5740;
+  --soil-700:#54412F;
+  --soil-800:#3A2D21;
+
+  /* --- Semantic status --- */
+  --success:#5F9E27;
+  --success-surface:#EDF6DF;
+  --warning:#C98A16;
+  --warning-surface:#FCF3E0;
+  --danger:#C0392B;
+  --danger-surface:#FBEBE9;
+  --info:#3E6F7E;
+  --info-surface:#E9F1F4;
+  --whatsapp:#25D366;
+  --whatsapp-dark:#128C7E;
+
+  /* --- Semantic aliases: text --- */
+  --text-strong:var(--stone-950);
+  --text-body:var(--stone-800);
+  --text-muted:var(--stone-600);
+  --text-subtle:var(--stone-400);
+  --text-on-green:#FFFFFF;
+  --text-on-dark:#FFFFFF;
+  --text-accent:var(--green-700);
+  --text-link:var(--green-700);
+  --text-link-hover:var(--green-800);
+
+  /* --- Semantic aliases: surfaces --- */
+  --surface-page:#FFFFFF;
+  --surface-sunken:var(--stone-50);
+  --surface-card:#FFFFFF;
+  --surface-card-alt:var(--soil-50);
+  --surface-inverse:var(--stone-950);
+  --surface-brand:var(--green-500);
+  --surface-brand-soft:var(--green-50);
+  --surface-brand-deep:var(--green-800);
+
+  /* --- Semantic aliases: lines --- */
+  --border-subtle:var(--stone-200);
+  --border-default:var(--stone-300);
+  --border-strong:var(--stone-400);
+  --border-brand:var(--green-500);
+  --focus-ring:color-mix(in oklab, var(--green-500) 55%, white);
+
+  /* --- Interaction --- */
+  --green-hover:var(--green-600);
+  --green-press:var(--green-700);
+  --overlay-scrim:color-mix(in oklab, var(--stone-950) 62%, transparent);
+  --overlay-glass:color-mix(in oklab, #FFFFFF 72%, transparent);
+}

@@ -190,7 +190,7 @@ export default function Page() {
         <p>
           O mais rápido é mostrar a área. A Primegramas avalia sol, sombra e drenagem na visita técnica e indica se
           a sintética resolve — inclusive quando a resposta é não. Fale pelo{" "}
-          <a href="https://wa.me/551141124329?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
+          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
             WhatsApp
           </a>{" "}
           ou <Link href="/contato">solicite um orçamento</Link>.

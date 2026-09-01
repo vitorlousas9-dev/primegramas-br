@@ -8,7 +8,7 @@ import Icon from "@/components/Icon";
 export const metadata = {
   alternates: { canonical: "/sobre" },
   title: "Sobre",
-  description: "16 anos de fornecimento e instalação de grama sintética. Conheça a trajetória, os diferenciais e a equipe técnica da Primegramas.",
+  description: "20 anos de fornecimento e instalação de grama sintética. Conheça a trajetória, os diferenciais e a equipe técnica da Primegramas.",
 };
 
 const DIFERENCIAIS = [
@@ -19,7 +19,7 @@ const DIFERENCIAIS = [
 ];
 
 const MOTIVOS = [
-  ["16 anos", "Pioneiros no mercado", "16 anos de tradição, qualidade e confiança."],
+  ["20 anos", "Pioneiros no mercado", "20 anos de tradição, qualidade e confiança."],
   ["+5.000", "Sucesso comprovado", "Mais de 5.000 clientes satisfeitos."],
   ["Laudo", "Qualidade excepcional", "Todos os produtos com laudos técnicos e certificações."],
 ];
@@ -44,11 +44,11 @@ export default function Page() {
           <div style={{ display: "grid", gap: "var(--space-5)", alignContent: "start" }}>
             <span className="pg-eyebrow">Quem somos</span>
             <h1 style={{ fontSize: "var(--text-display-2)", margin: 0, fontWeight: "var(--fw-light)", lineHeight: "var(--lh-snug)" }}>
-              16 anos de <span style={{ fontWeight: "var(--fw-bold)" }}>grama sintética instalada</span>
+              20 anos de <span style={{ fontWeight: "var(--fw-bold)" }}>grama sintética instalada</span>
             </h1>
             <p style={{ fontSize: "var(--text-lg)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)" }}>
               A Primegramas é referência no fornecimento e instalação de grama sintética de alta qualidade. Com uma trajetória sólida,
-              estamos há 16 anos atendendo a diversos setores, oferecendo soluções práticas e personalizadas para cada cliente. Nossa
+              estamos há 20 anos atendendo a diversos setores, oferecendo soluções práticas e personalizadas para cada cliente. Nossa
               missão é transformar espaços com um produto durável, sustentável e com a aparência natural que você precisa.
             </p>
           </div>

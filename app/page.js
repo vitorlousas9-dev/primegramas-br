@@ -7,9 +7,18 @@ import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 import StarRating from "@/components/StarRating";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import { SITE_URL } from "@/lib/site";
+
+const PT_SITE_URL = "https://www.primegramas.pt";
 
 export const metadata = {
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "pt-BR": SITE_URL,
+      "pt-PT": PT_SITE_URL,
+    },
+  },
 };
 
 const arrowLinkStyle = {
@@ -51,7 +60,7 @@ export default function Home() {
               Soluções em Grama Sintética: <span style={{ fontWeight: "var(--fw-bold)" }}>Qualidade e Excelência</span> para Seu Projeto
             </h1>
             <p style={{ color: "var(--stone-200)", fontSize: "var(--text-lg)", lineHeight: "var(--lh-relaxed)", maxWidth: 560 }}>
-              Há 16 anos transformando espaços com um produto durável, sustentável e com a aparência natural que você precisa.
+              Há 20 anos transformando espaços com um produto durável, sustentável e com a aparência natural que você precisa.
             </p>
             <div style={{ display: "flex", gap: "var(--space-3)", flexWrap: "wrap", pointerEvents: "auto", marginTop: "var(--space-2)" }}>
               <Link
@@ -126,7 +135,7 @@ export default function Home() {
               Referência em <span style={{ fontWeight: "var(--fw-bold)" }}>fornecimento e instalação</span> de grama sintética
             </h2>
             <p style={{ fontSize: "var(--text-lg)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)", maxWidth: 520 }}>
-              São 16 anos atendendo condomínios, escolas, clubes, construtoras e donos de quadras, com soluções práticas e personalizadas para cada projeto.
+              São 20 anos atendendo condomínios, escolas, clubes, construtoras e donos de quadras, com soluções práticas e personalizadas para cada projeto.
             </p>
             <Link href="/sobre" style={arrowLinkStyle}>
               Ver mais sobre a Primegramas
@@ -263,7 +272,7 @@ export default function Home() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--space-8)" }}>
             {[
-              ["16 anos", "Pioneiros no mercado", "Tradição, qualidade e confiança construídas desde a primeira instalação."],
+              ["20 anos", "Pioneiros no mercado", "Tradição, qualidade e confiança construídas desde a primeira instalação."],
               ["+5.000", "Clientes satisfeitos", "Sucesso comprovado em obras de pequeno e grande porte, no Brasil e em Portugal."],
               ["Laudo", "Qualidade excepcional", "Todos os produtos com laudos técnicos e certificações."],
             ].map(([stat, title, text]) => (

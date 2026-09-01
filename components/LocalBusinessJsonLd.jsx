@@ -1,4 +1,4 @@
-import { SITE_URL, PHONE_DISPLAY, EMAIL } from "@/lib/site";
+import { SITE_URL, EMAIL } from "@/lib/site";
 
 export default function LocalBusinessJsonLd() {
   const data = {
@@ -6,9 +6,9 @@ export default function LocalBusinessJsonLd() {
     "@type": "HomeAndConstructionBusiness",
     name: "Primegramas",
     description:
-      "Fornecimento e instalação de grama sintética há 16 anos, para jardins, condomínios, escolas, clubes e campos esportivos.",
+      "Fornecimento e instalação de grama sintética há 20 anos, para jardins, condomínios, escolas, clubes e campos esportivos.",
     url: SITE_URL,
-    telephone: "+551147713609",
+    telephone: "+551141124329",
     email: EMAIL,
     image: `${SITE_URL}/assets/logo-vertical-new.png`,
     priceRange: "R$R$",

@@ -25,7 +25,7 @@ export default function Page() {
             Guias sobre <span style={{ fontWeight: "var(--fw-bold)" }}>grama sintética</span>
           </h1>
           <p style={{ fontSize: "var(--text-lg)", color: "var(--text-body)", lineHeight: "var(--lh-relaxed)" }}>
-            Preço, durabilidade, escolha de modelo e aplicações — com a experiência de 16 anos instalando grama
+            Preço, durabilidade, escolha de modelo e aplicações — com a experiência de 20 anos instalando grama
             sintética em São Paulo e Portugal.
           </p>
         </div>

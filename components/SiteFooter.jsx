@@ -34,7 +34,7 @@ export default function SiteFooter() {
             style={{ height: 92, width: "auto", objectFit: "contain", objectPosition: "left" }}
           />
           <p style={{ fontSize: "var(--text-sm)", color: "var(--stone-400)", lineHeight: "var(--lh-relaxed)", maxWidth: 280 }}>
-            Fornecimento e instalação de grama sintética há 16 anos. Do orçamento à entrega, sempre à disposição.
+            Fornecimento e instalação de grama sintética há 20 anos. Do orçamento à entrega, sempre à disposição.
           </p>
           <a
             href={WHATSAPP_URL}
@@ -145,9 +145,9 @@ export default function SiteFooter() {
               Portugal
             </span>
             <span style={{ fontSize: "var(--text-sm)", color: "var(--stone-400)", lineHeight: "var(--lh-relaxed)" }}>
-              Estrada Malveira da Serra 1920
+              Estrada de Sassoeiros, 96A
               <br />
-              Lisboa — Cascais
+              2775-530 Carcavelos
             </span>
           </div>
         </div>

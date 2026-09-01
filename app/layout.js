@@ -38,7 +38,7 @@ export const metadata = {
     template: "%s — Primegramas",
   },
   description:
-    "Fornecimento e instalação de grama sintética há 16 anos. Soluções para jardins, condomínios, escolas, clubes e campos esportivos, no Brasil e em Portugal.",
+    "Fornecimento e instalação de grama sintética há 20 anos. Soluções para jardins, condomínios, escolas, clubes e campos esportivos, no Brasil e em Portugal.",
   openGraph: {
     type: "website",
     locale: "pt_BR",

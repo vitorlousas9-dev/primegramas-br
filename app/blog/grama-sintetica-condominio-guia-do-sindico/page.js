@@ -170,11 +170,11 @@ export default function Page() {
       <div className="pg-inline-cta">
         <b>Proposta para apresentar em assembleia</b>
         <p>
-          A Primegramas atende condomínios há 16 anos e faz visita técnica com proposta formal para apresentação em
+          A Primegramas atende condomínios há 20 anos e faz visita técnica com proposta formal para apresentação em
           assembleia — incluindo especificação do produto, prazo e garantia por escrito.{" "}
           <Link href="/produtos/decorativa/condominios">Veja aplicações em condomínio</Link> ou fale com a equipe
           comercial pelo{" "}
-          <a href="https://wa.me/551141124329?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
+          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
             WhatsApp
           </a>
           .

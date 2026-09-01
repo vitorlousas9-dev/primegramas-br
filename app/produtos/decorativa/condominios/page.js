@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Condomínios e Áreas Comuns" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa/condominios" },
+  title: "Condomínios e Áreas Comuns",
+  description: "Grama sintética para áreas comuns de condomínio: acaba com a lama da chuva e reduz o custo de manutenção do paisagismo.",
+};
 
 export default function Page() {
   return (
@@ -14,6 +18,7 @@ export default function Page() {
       title={{ light: "Condomínios e", bold: "Áreas Comuns" }}
       intro="Áreas comuns de condomínio sofrem o ano inteiro com terra exposta, poças na chuva e jardinagem constante. A grama sintética entrega um espaço verde acabado, pronto para uso todos os dias, sem depender de manutenção recorrente."
       heroSrc="/images/condominio-playground.jpeg"
+      heroAlt="Área comum de condomínio com grama sintética instalada"
       heroPlaceholder="Foto — área comum de condomínio com grama sintética"
       benefits={[
         { icon: "layers", title: "Base firme ao solo", text: "Polipropileno com 2 camadas de látex garante aderência e sustentação dos fios mesmo em áreas de passagem constante." },

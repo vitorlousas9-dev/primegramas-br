@@ -6,7 +6,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 
-export const metadata = { title: "Linha Esportiva" };
+export const metadata = {
+  alternates: { canonical: "/produtos/esportiva" },
+  title: "Linha Esportiva",
+  description: "Grama sintética esportiva de 20mm a 50mm para campos de futebol society, quadras de tênis e padel, com alta resistência e drenagem rápida.",
+};
 
 const CARDS = [
   {

@@ -6,7 +6,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 
-export const metadata = { title: "Linha Decorativa" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa" },
+  title: "Linha Decorativa",
+  description: "Grama sintética decorativa de 12mm a 30mm para jardins, playgrounds, condomínios, piscinas e ambientes comerciais.",
+};
 
 const CARDS = [
   {

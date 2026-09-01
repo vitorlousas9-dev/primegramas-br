@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Eventos e Decoração Temática" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa/eventos" },
+  title: "Eventos e Decoração Temática",
+  description: "Grama sintética colorida para decoração de eventos, com cores vibrantes e instalação temporária.",
+};
 
 export default function Page() {
   return (
@@ -14,6 +18,7 @@ export default function Page() {
       title={{ light: "Eventos e", bold: "Decoração Temática" }}
       intro="Para eventos e cenografia, a grama sintética entra e sai do espaço sem deixar rastro, com cores que vão do verde tradicional a tons vibrantes para decoração temática."
       heroSrc="/images/evento-grama-colorida.jpeg"
+      heroAlt="Grama sintética colorida para decoração de eventos"
       heroPlaceholder="Foto — decoração de evento com grama sintética colorida"
       benefits={[
         { icon: "sprout", title: "7 cores disponíveis", text: "Amarelo, vermelho, azul, preto, branco, roxo e rosa, além do verde tradicional, para ambientes personalizados." },

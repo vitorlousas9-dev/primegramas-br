@@ -8,6 +8,10 @@ import Icon from "@/components/Icon";
 import StarRating from "@/components/StarRating";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 const arrowLinkStyle = {
   display: "inline-flex",
   alignItems: "center",
@@ -93,7 +97,7 @@ export default function Home() {
             <div style={{ display: "flex", gap: "var(--space-6)", flexWrap: "wrap", marginTop: "var(--space-4)" }}>
               <span style={{ display: "flex", alignItems: "center", gap: 8, color: "#fff", fontSize: "var(--text-sm)", fontWeight: "var(--fw-semibold)" }}>
                 <StarRating size={16} />
-                +1.700 clientes satisfeitos
+                +5.000 clientes satisfeitos
               </span>
               <span style={{ display: "flex", alignItems: "center", gap: 8, color: "#fff", fontSize: "var(--text-sm)", fontWeight: "var(--fw-semibold)" }}>
                 <Icon name="shield-check" size={18} color="var(--green-400)" />

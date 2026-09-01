@@ -5,7 +5,11 @@ import QuoteCTA from "@/components/QuoteCTA";
 import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 
-export const metadata = { title: "Produtos" };
+export const metadata = {
+  alternates: { canonical: "/produtos" },
+  title: "Produtos",
+  description: "Linha Decorativa e Linha Esportiva de grama sintética, de 12mm a 50mm, com fio 100% polietileno virgem e garantia de 1 a 3 anos.",
+};
 
 export default function Page() {
   return (

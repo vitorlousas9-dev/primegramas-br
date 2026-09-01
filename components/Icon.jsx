@@ -1,5 +1,6 @@
 import {
   ArrowRight,
+  Calendar,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -25,6 +26,7 @@ import {
 // the icons this design actually uses instead of the whole Lucide set.
 const ICONS = {
   "arrow-right": ArrowRight,
+  calendar: Calendar,
   "chevron-down": ChevronDown,
   "chevron-left": ChevronLeft,
   "chevron-right": ChevronRight,

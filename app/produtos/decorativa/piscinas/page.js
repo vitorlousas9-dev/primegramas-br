@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Bordas de Piscina" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa/piscinas" },
+  title: "Bordas de Piscina",
+  description: "Grama sintética para bordas de piscina, com conforto ao toque descalço e resistência à umidade constante.",
+};
 
 export default function Page() {
   return (
@@ -14,6 +18,7 @@ export default function Page() {
       title={{ light: "Bordas de", bold: "Piscina" }}
       intro="A área ao redor da piscina pede uma grama confortável ao toque descalço e resistente à exposição constante a água e sol. Os modelos mais macios da linha decorativa entregam essa combinação sem perder a aparência natural."
       heroSrc="/images/piscina-borda.jpeg"
+      heroAlt="Borda de piscina residencial com grama sintética"
       heroPlaceholder="Foto — borda de piscina com grama sintética"
       benefits={[
         { icon: "sprout", title: "Conforto ao toque descalço", text: "Modelos mais macios e com mais volume, indicados para uso descalço na borda da piscina." },

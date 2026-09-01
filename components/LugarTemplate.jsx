@@ -14,6 +14,7 @@ export default function LugarTemplate({
   intro,
   heroPlaceholder,
   heroSrc,
+  heroAlt,
   benefits,
   idealPara,
 }) {
@@ -72,7 +73,7 @@ export default function LugarTemplate({
               boxShadow: "var(--shadow-md)",
             }}
           >
-            <PhotoSlot src={heroSrc} placeholder={heroPlaceholder} alt="" />
+            <PhotoSlot src={heroSrc} placeholder={heroPlaceholder} alt={heroAlt || ""} />
           </div>
         </div>
       </section>

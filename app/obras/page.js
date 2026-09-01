@@ -3,7 +3,11 @@ import SiteFooter from "@/components/SiteFooter";
 import QuoteCTA from "@/components/QuoteCTA";
 import PhotoSlot from "@/components/PhotoSlot";
 
-export const metadata = { title: "Obras" };
+export const metadata = {
+  alternates: { canonical: "/obras" },
+  title: "Obras",
+  description: "Uma seleção de obras de instalação de grama sintética em condomínios, escolas, clubes e residências entregues pela Primegramas.",
+};
 
 const OBRAS = [
   { src: "/images/obra-escola-01.jpeg", alt: "Grama sintética instalada em playground escolar" },

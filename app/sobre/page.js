@@ -5,7 +5,11 @@ import PhotoSlot from "@/components/PhotoSlot";
 import BenefitCard from "@/components/BenefitCard";
 import Icon from "@/components/Icon";
 
-export const metadata = { title: "Sobre" };
+export const metadata = {
+  alternates: { canonical: "/sobre" },
+  title: "Sobre",
+  description: "16 anos de fornecimento e instalação de grama sintética. Conheça a trajetória, os diferenciais e a equipe técnica da Primegramas.",
+};
 
 const DIFERENCIAIS = [
   { icon: "message-circle", title: "Atendimento personalizado", text: "Cada cliente fala com quem entende do produto, do primeiro contato ao pós-venda." },

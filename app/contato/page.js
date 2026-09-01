@@ -4,7 +4,11 @@ import Icon from "@/components/Icon";
 import { Input, Select, Textarea } from "@/components/fields/Field";
 import { WHATSAPP_URL, WHATSAPP_DISPLAY, PHONE_URL, PHONE_DISPLAY, EMAIL, SITE_URL } from "@/lib/site";
 
-export const metadata = { title: "Contato" };
+export const metadata = {
+  alternates: { canonical: "/contato" },
+  title: "Contato",
+  description: "Solicite um orçamento de grama sintética sem custo. Atendimento por telefone, WhatsApp ou e-mail, com visita técnica antes da instalação.",
+};
 
 const USOS = [
   "Jardim ou área de lazer",

@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Quadras Poliesportivas" };
+export const metadata = {
+  alternates: { canonical: "/produtos/esportiva/quadras" },
+  title: "Quadras Poliesportivas",
+  description: "Grama sintética esportiva para quadras poliesportivas, com alta resistência ao pisoteio e absorção de impacto.",
+};
 
 export default function Page() {
   return (
@@ -15,6 +19,7 @@ export default function Page() {
       condensed
       intro="Quadras poliesportivas recebem esportes e usos diferentes ao longo do dia, o que pede um gramado resistente com um perfil mais baixo. É a aplicação indicada para o fio de menor altura dentro da linha esportiva."
       heroSrc="/images/quadra-poliesportiva.jpeg"
+      heroAlt="Quadra poliesportiva com grama sintética esportiva"
       heroPlaceholder="Foto — quadra poliesportiva com grama esportiva"
       benefits={[
         { icon: "ruler", title: "Perfil mais baixo, alta resistência", text: "Fio de menor altura da linha esportiva, indicado para uso recreativo intenso e multiuso." },

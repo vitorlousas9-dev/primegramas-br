@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Vitrines e Ambientes Comerciais" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa/vitrines" },
+  title: "Vitrines e Ambientes Comerciais",
+  description: "Grama sintética para vitrines e ambientes comerciais, um ponto verde de baixa manutenção para lojas e escritórios.",
+};
 
 export default function Page() {
   return (
@@ -14,6 +18,7 @@ export default function Page() {
       title={{ light: "Vitrines e", bold: "Ambientes Comerciais" }}
       intro="Lojas, escritórios e vitrines usam a grama sintética para criar um ponto verde de baixa manutenção, tanto em ambientes internos quanto externos, sem o cuidado que a grama natural exigiria em um espaço comercial."
       heroSrc="/images/vitrine-comercial.jpeg"
+      heroAlt="Ambiente comercial com grama sintética decorativa"
       heroPlaceholder="Foto — vitrine comercial com grama sintética"
       benefits={[
         { icon: "clock", title: "Baixa manutenção", text: "Sem rega e sem corte — mantém o visual pronto para atender o público todos os dias." },

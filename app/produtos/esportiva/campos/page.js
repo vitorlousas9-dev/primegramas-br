@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Campos de Futebol e Society" };
+export const metadata = {
+  alternates: { canonical: "/produtos/esportiva/campos" },
+  title: "Campos de Futebol e Society",
+  description: "Grama sintética esportiva de 40mm a 50mm para campos de futebol society, com drenagem rápida e absorção de impacto.",
+};
 
 export default function Page() {
   return (
@@ -15,7 +19,7 @@ export default function Page() {
       condensed
       intro="Campos de futebol e society exigem um gramado com boa absorção de impacto e drenagem rápida, para manter a jogabilidade mesmo depois da chuva. A altura de fio recomendada para essa aplicação é de 40 a 60mm."
       heroSrc="/images/campo-futebol.jpeg"
-      heroSrc="/images/campo-futebol.jpeg"
+      heroAlt="Campo de futebol society com grama sintética esportiva"
       heroPlaceholder="Foto — campo de futebol society com grama esportiva"
       benefits={[
         { icon: "droplets", title: "Drenagem rápida", text: "Absorção rápida de água, evita poças e garante jogabilidade mesmo na chuva." },

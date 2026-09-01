@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Playgrounds e Áreas Infantis" };
+export const metadata = {
+  alternates: { canonical: "/produtos/decorativa/playgrounds" },
+  title: "Playgrounds e Áreas Infantis",
+  description: "Grama sintética para playgrounds e áreas infantis, com superfície macia, seca e amortecimento para um espaço mais seguro.",
+};
 
 export default function Page() {
   return (
@@ -14,6 +18,7 @@ export default function Page() {
       title={{ light: "Playgrounds e", bold: "Áreas Infantis" }}
       intro="Áreas infantis pedem uma superfície macia, uniforme e sem barro. Combinado ao amortecedor Shock Pad, o gramado sintético reduz o risco de lesões em quedas e mantém o espaço seguro para uso diário."
       heroSrc="/images/playground-desenhos.jpeg"
+      heroAlt="Playground com grama sintética decorativa e desenhos coloridos"
       heroPlaceholder="Foto — playground com grama sintética"
       benefits={[
         {

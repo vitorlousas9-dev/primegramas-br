@@ -1,5 +1,7 @@
 import { Figtree, Montserrat, Saira_Condensed, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import LocalBusinessJsonLd from "@/components/LocalBusinessJsonLd";
+import { SITE_URL } from "@/lib/site";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -30,12 +32,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Primegramas — Grama Sintética para Jardins e Desportos",
     template: "%s — Primegramas",
   },
   description:
     "Fornecimento e instalação de grama sintética há 16 anos. Soluções para jardins, condomínios, escolas, clubes e campos esportivos, no Brasil e em Portugal.",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Primegramas",
+    url: SITE_URL,
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -44,7 +53,10 @@ export default function RootLayout({ children }) {
       lang="pt-BR"
       className={`${figtree.variable} ${montserrat.variable} ${sairaCondensed.variable} ${jetbrainsMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <LocalBusinessJsonLd />
+        {children}
+      </body>
     </html>
   );
 }

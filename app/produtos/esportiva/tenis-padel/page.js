@@ -1,6 +1,10 @@
 import LugarTemplate from "@/components/LugarTemplate";
 
-export const metadata = { title: "Tênis e Padel" };
+export const metadata = {
+  alternates: { canonical: "/produtos/esportiva/tenis-padel" },
+  title: "Tênis e Padel",
+  description: "Grama sintética esportiva de perfil baixo para quadras de tênis e padel, com alta resistência para o ritmo de jogo.",
+};
 
 export default function Page() {
   return (
@@ -15,6 +19,7 @@ export default function Page() {
       condensed
       intro="Quadras de tênis e padel pedem um gramado de perfil mais baixo, com boa resistência ao uso intenso e sem perder a estabilidade nas jogadas. A base em polipropileno com látex sustenta os fios mesmo com o desgaste do jogo."
       heroSrc="/images/quadra-padel.jpeg"
+      heroAlt="Quadra de padel com grama sintética esportiva"
       heroPlaceholder="Foto — quadra de tênis ou padel com grama esportiva"
       benefits={[
         { icon: "ruler", title: "Perfil mais baixo", text: "Fios de menor altura, adequados ao tipo de jogo e ao deslocamento em quadras de tênis e padel." },

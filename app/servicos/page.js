@@ -4,7 +4,11 @@ import QuoteCTA from "@/components/QuoteCTA";
 import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 
-export const metadata = { title: "Serviços" };
+export const metadata = {
+  alternates: { canonical: "/servicos" },
+  title: "Serviços",
+  description: "Instalação especializada e consultoria técnica em grama sintética, da preparação da base à aplicação do gramado pronto para uso.",
+};
 
 const STEPS = [
   ["01", "Consulta e orçamento", "Atendimento por telefone, WhatsApp ou e-mail para entender a finalidade, a metragem e as condições do piso."],

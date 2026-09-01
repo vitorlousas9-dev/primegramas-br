@@ -284,3 +284,182 @@ img {
   background: var(--stone-300);
   border-radius: 999px;
 }
+
+/* --- Article prose (blog posts) --- */
+
+.pg-article {
+  max-width: 720px;
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-body);
+}
+.pg-article > * + * {
+  margin-top: var(--space-5);
+}
+.pg-article h2 {
+  font-size: var(--text-heading-1);
+  font-weight: var(--fw-bold);
+  margin-top: var(--space-12);
+  text-wrap: balance;
+}
+.pg-article h3 {
+  font-size: var(--text-heading-3);
+  font-weight: var(--fw-bold);
+  margin-top: var(--space-8);
+  text-wrap: balance;
+}
+.pg-article p,
+.pg-article li {
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--text-body);
+}
+.pg-article ul,
+.pg-article ol {
+  padding-left: 1.15em;
+  display: grid;
+  gap: var(--space-2);
+}
+.pg-article li::marker {
+  color: var(--green-600);
+  font-weight: var(--fw-bold);
+}
+.pg-article strong {
+  color: var(--text-strong);
+  font-weight: var(--fw-bold);
+}
+.pg-article a {
+  font-weight: var(--fw-semibold);
+}
+
+.pg-lede {
+  font-size: var(--text-lg);
+  color: var(--text-strong);
+  border-left: 3px solid var(--green-500);
+  padding-left: var(--space-5);
+  line-height: var(--lh-relaxed);
+}
+
+.pg-article .pg-scroller {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+.pg-article table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+.pg-article th {
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: var(--fw-bold);
+  font-size: var(--text-2xs);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--surface-sunken);
+  padding: var(--space-3) var(--space-4);
+  white-space: nowrap;
+}
+.pg-article td {
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+  vertical-align: top;
+  color: var(--text-body);
+}
+.pg-article td strong {
+  color: var(--text-strong);
+}
+
+.pg-callout {
+  background: var(--warning-surface);
+  border: 1px solid color-mix(in oklab, var(--warning) 35%, transparent);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  display: grid;
+  gap: var(--space-2);
+}
+.pg-callout b {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--warning);
+}
+.pg-callout p {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--stone-800);
+}
+
+.pg-inline-cta {
+  background: var(--surface-brand-soft);
+  border: 1px solid var(--border-brand);
+  border-radius: var(--radius-md);
+  padding: var(--space-5) var(--space-6);
+  display: grid;
+  gap: var(--space-2);
+}
+.pg-inline-cta b {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--green-700);
+}
+.pg-inline-cta p {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--green-900);
+}
+.pg-inline-cta a {
+  color: var(--green-800);
+}
+
+/* --- FAQ accordion (native <details>, no JS) --- */
+
+.pg-faq-item {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--space-5) 0;
+}
+.pg-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  font-size: var(--text-base);
+  color: var(--text-strong);
+}
+.pg-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.pg-faq-item summary::after {
+  content: "+";
+  flex: none;
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--green-600);
+  transition: transform var(--dur-fast) var(--ease-standard);
+}
+.pg-faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.pg-faq-item p {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-base);
+  color: var(--text-body);
+  line-height: var(--lh-relaxed);
+}

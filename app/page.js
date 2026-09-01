@@ -28,7 +28,7 @@ export default function Home() {
       <SiteHeader active="inicio" />
 
       <section style={{ position: "relative", minHeight: 620, display: "grid", alignItems: "center", overflow: "hidden" }}>
-        <PhotoSlot src="/images/campo-futebol.jpeg" alt="Obra entregue pela Primegramas" placeholder="Foto de obra entregue — jardim ou campo, largura total" priority />
+        <PhotoSlot src="/images/jardim-residencial-lawn.jpeg" alt="Jardim residencial com grama sintética Primegramas" placeholder="Foto de obra entregue — jardim ou campo, largura total" priority />
         <div
           style={{
             position: "absolute",
@@ -130,7 +130,7 @@ export default function Home() {
             </Link>
           </div>
           <div style={{ position: "relative", height: 340, borderRadius: "var(--radius-blade)", overflow: "hidden", boxShadow: "var(--shadow-md)" }}>
-            <PhotoSlot placeholder="Foto da equipe ou de uma instalação em andamento" />
+            <PhotoSlot src="/images/instalacao-em-andamento.jpeg" alt="Instalação de grama sintética em andamento" placeholder="Foto da equipe ou de uma instalação em andamento" />
           </div>
         </div>
       </section>
@@ -197,7 +197,7 @@ export default function Home() {
               }}
             >
               <div style={{ position: "relative", height: 260 }}>
-                <PhotoSlot placeholder="Foto — jardim ou área de lazer com grama decorativa" />
+                <PhotoSlot src="/images/jardim-moderno-entardecer.jpeg" alt="Jardim residencial com grama sintética decorativa" placeholder="Foto — jardim ou área de lazer com grama decorativa" />
               </div>
               <div style={{ padding: "var(--space-6)", display: "grid", gap: "var(--space-3)" }}>
                 <span className="pg-eyebrow">7 modelos · 12mm a 30mm</span>

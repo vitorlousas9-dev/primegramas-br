@@ -40,7 +40,7 @@ export default function Page() {
             style={{ border: "1px solid var(--border-subtle)", display: "block", background: "var(--surface-card)", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)" }}
           >
             <div style={{ position: "relative", height: 240 }}>
-              <PhotoSlot placeholder="Foto — jardim residencial com grama decorativa" />
+              <PhotoSlot src="/images/jardim-decorativa-instalacao.jpeg" alt="Instalação de grama sintética decorativa em jardim residencial" placeholder="Foto — jardim residencial com grama decorativa" />
             </div>
             <div style={{ padding: "var(--space-6)", display: "grid", gap: "var(--space-3)" }}>
               <span className="pg-eyebrow">6 aplicações</span>

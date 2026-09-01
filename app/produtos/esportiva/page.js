@@ -13,12 +13,14 @@ const CARDS = [
     href: "/produtos/esportiva/campos",
     title: "Campos de Futebol e Society",
     text: "Drenagem rápida e absorção de impacto para manter o jogo em qualquer clima.",
+    src: "/images/campo-futebol.jpeg",
     placeholder: "Foto — campo de futebol society com grama esportiva",
   },
   {
     href: "/produtos/esportiva/tenis-padel",
     title: "Tênis e Padel",
     text: "Perfil baixo e alta resistência para o ritmo de jogo em quadra.",
+    src: "/images/quadra-padel.jpeg",
     placeholder: "Foto — quadra de tênis ou padel com grama esportiva",
   },
 ];
@@ -82,7 +84,7 @@ export default function Page() {
                 style={{ border: "1px solid var(--border-subtle)", display: "block", background: "var(--surface-card)", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)" }}
               >
                 <div style={{ position: "relative", height: 200 }}>
-                  <PhotoSlot src={card.href.includes("campos") ? "/images/campo-futebol.jpeg" : undefined} placeholder={card.placeholder} />
+                  <PhotoSlot src={card.src} alt={card.title} placeholder={card.placeholder} />
                 </div>
                 <div style={{ padding: "var(--space-6)", display: "grid", gap: "var(--space-2)" }}>
                   <h3 style={{ fontSize: "var(--text-heading-2)", margin: 0, fontWeight: "var(--fw-bold)" }}>{card.title}</h3>

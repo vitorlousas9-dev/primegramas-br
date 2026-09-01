@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Playgrounds e", bold: "Áreas Infantis" }}
       intro="Áreas infantis pedem uma superfície macia, uniforme e sem barro. Combinado ao amortecedor Shock Pad, o gramado sintético reduz o risco de lesões em quedas e mantém o espaço seguro para uso diário."
+      heroSrc="/images/playground-desenhos.jpeg"
       heroPlaceholder="Foto — playground com grama sintética"
       benefits={[
         {

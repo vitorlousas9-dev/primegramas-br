@@ -14,6 +14,7 @@ export default function Page() {
       title="Quadras Poliesportivas"
       condensed
       intro="Quadras poliesportivas recebem esportes e usos diferentes ao longo do dia, o que pede um gramado resistente com um perfil mais baixo. É a aplicação indicada para o fio de menor altura dentro da linha esportiva."
+      heroSrc="/images/quadra-poliesportiva.jpeg"
       heroPlaceholder="Foto — quadra poliesportiva com grama esportiva"
       benefits={[
         { icon: "ruler", title: "Perfil mais baixo, alta resistência", text: "Fio de menor altura da linha esportiva, indicado para uso recreativo intenso e multiuso." },

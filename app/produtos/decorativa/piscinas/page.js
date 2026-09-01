@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Bordas de", bold: "Piscina" }}
       intro="A área ao redor da piscina pede uma grama confortável ao toque descalço e resistente à exposição constante a água e sol. Os modelos mais macios da linha decorativa entregam essa combinação sem perder a aparência natural."
+      heroSrc="/images/piscina-borda.jpeg"
       heroPlaceholder="Foto — borda de piscina com grama sintética"
       benefits={[
         { icon: "sprout", title: "Conforto ao toque descalço", text: "Modelos mais macios e com mais volume, indicados para uso descalço na borda da piscina." },

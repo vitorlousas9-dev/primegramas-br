@@ -49,7 +49,7 @@ export default function Page() {
             </p>
           </div>
           <div style={{ position: "relative", height: 420, borderRadius: "var(--radius-blade)", overflow: "hidden", boxShadow: "var(--shadow-md)" }}>
-            <PhotoSlot placeholder="Foto da equipe técnica ou de uma obra entregue" />
+            <PhotoSlot src="/images/equipe-instalacao-rooftop.jpeg" alt="Equipe técnica Primegramas em instalação de grama sintética" placeholder="Foto da equipe técnica ou de uma obra entregue" />
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function Page() {
               Por que os projetos <span style={{ fontWeight: "var(--fw-bold)" }}>voltam para nós</span>
             </h2>
             <div style={{ position: "relative", height: 280, borderRadius: "var(--radius-lg)", overflow: "hidden", marginTop: "var(--space-4)" }}>
-              <PhotoSlot placeholder="Foto — instalação em condomínio ou quadra" />
+              <PhotoSlot src="/images/condominio-playground.jpeg" alt="Instalação de grama sintética em área comum de condomínio" placeholder="Foto — instalação em condomínio ou quadra" />
             </div>
           </div>
           <div style={{ display: "grid", gap: 0, alignContent: "start" }}>

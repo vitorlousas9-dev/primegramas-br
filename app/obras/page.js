@@ -5,6 +5,18 @@ import PhotoSlot from "@/components/PhotoSlot";
 
 export const metadata = { title: "Obras" };
 
+const OBRAS = [
+  { src: "/images/obra-escola-01.jpeg", alt: "Grama sintética instalada em playground escolar" },
+  { src: "/images/obra-escola-02.jpeg", alt: "Grama sintética instalada em playground com balanços" },
+  { src: "/images/obra-grama-colorida.jpeg", alt: "Grama sintética colorida instalada em área de playground" },
+  { src: "/images/obra-piscina-02.jpeg", alt: "Grama sintética instalada ao redor de piscina residencial" },
+  { src: "/images/obra-playground-crianca.jpeg", alt: "Criança brincando sobre grama sintética instalada" },
+  { src: "/images/piscina-borda.jpeg", alt: "Borda de piscina com grama sintética instalada" },
+  { src: "/images/condominio-playground.jpeg", alt: "Playground de condomínio com grama sintética instalada" },
+  { src: "/images/quadra-padel.jpeg", alt: "Quadra de padel com grama sintética instalada" },
+  { src: "/images/quadra-poliesportiva.jpeg", alt: "Quadra poliesportiva com grama sintética instalada" },
+];
+
 export default function Page() {
   return (
     <>
@@ -33,9 +45,9 @@ export default function Page() {
             gap: "var(--space-5)",
           }}
         >
-          {Array.from({ length: 9 }).map((_, i) => (
+          {OBRAS.map((obra, i) => (
             <div
-              key={i}
+              key={obra.src}
               style={{
                 position: "relative",
                 aspectRatio: "4 / 3",
@@ -44,7 +56,7 @@ export default function Page() {
                 boxShadow: "var(--shadow-sm)",
               }}
             >
-              <PhotoSlot placeholder="Foto da obra" />
+              <PhotoSlot src={obra.src} alt={obra.alt} placeholder="Foto da obra" />
             </div>
           ))}
         </div>

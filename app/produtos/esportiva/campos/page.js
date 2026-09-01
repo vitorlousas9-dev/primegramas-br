@@ -15,6 +15,7 @@ export default function Page() {
       condensed
       intro="Campos de futebol e society exigem um gramado com boa absorção de impacto e drenagem rápida, para manter a jogabilidade mesmo depois da chuva. A altura de fio recomendada para essa aplicação é de 40 a 60mm."
       heroSrc="/images/campo-futebol.jpeg"
+      heroSrc="/images/campo-futebol.jpeg"
       heroPlaceholder="Foto — campo de futebol society com grama esportiva"
       benefits={[
         { icon: "droplets", title: "Drenagem rápida", text: "Absorção rápida de água, evita poças e garante jogabilidade mesmo na chuva." },

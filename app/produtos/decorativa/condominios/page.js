@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Condomínios e", bold: "Áreas Comuns" }}
       intro="Áreas comuns de condomínio sofrem o ano inteiro com terra exposta, poças na chuva e jardinagem constante. A grama sintética entrega um espaço verde acabado, pronto para uso todos os dias, sem depender de manutenção recorrente."
+      heroSrc="/images/condominio-playground.jpeg"
       heroPlaceholder="Foto — área comum de condomínio com grama sintética"
       benefits={[
         { icon: "layers", title: "Base firme ao solo", text: "Polipropileno com 2 camadas de látex garante aderência e sustentação dos fios mesmo em áreas de passagem constante." },

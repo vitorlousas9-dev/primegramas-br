@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Eventos e", bold: "Decoração Temática" }}
       intro="Para eventos e cenografia, a grama sintética entra e sai do espaço sem deixar rastro, com cores que vão do verde tradicional a tons vibrantes para decoração temática."
+      heroSrc="/images/evento-grama-colorida.jpeg"
       heroPlaceholder="Foto — decoração de evento com grama sintética colorida"
       benefits={[
         { icon: "sprout", title: "7 cores disponíveis", text: "Amarelo, vermelho, azul, preto, branco, roxo e rosa, além do verde tradicional, para ambientes personalizados." },

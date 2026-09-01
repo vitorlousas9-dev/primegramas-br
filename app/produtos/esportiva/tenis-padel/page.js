@@ -14,6 +14,7 @@ export default function Page() {
       title="Tênis e Padel"
       condensed
       intro="Quadras de tênis e padel pedem um gramado de perfil mais baixo, com boa resistência ao uso intenso e sem perder a estabilidade nas jogadas. A base em polipropileno com látex sustenta os fios mesmo com o desgaste do jogo."
+      heroSrc="/images/quadra-padel.jpeg"
       heroPlaceholder="Foto — quadra de tênis ou padel com grama esportiva"
       benefits={[
         { icon: "ruler", title: "Perfil mais baixo", text: "Fios de menor altura, adequados ao tipo de jogo e ao deslocamento em quadras de tênis e padel." },

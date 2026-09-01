@@ -13,36 +13,42 @@ const CARDS = [
     href: "/produtos/decorativa/jardins",
     title: "Jardins e Paisagismo",
     text: "Verde o ano todo, sem rega e sem corte, em qualquer projeto de paisagismo.",
+    src: "/images/jardim-decorativa-instalacao.jpeg",
     placeholder: "Foto — jardim residencial com grama decorativa",
   },
   {
     href: "/produtos/decorativa/playgrounds",
     title: "Playgrounds e Áreas Infantis",
     text: "Superfície macia e seca, com amortecimento para um playground mais seguro.",
+    src: "/images/playground-desenhos.jpeg",
     placeholder: "Foto — playground com grama sintética",
   },
   {
     href: "/produtos/decorativa/condominios",
     title: "Condomínios e Áreas Comuns",
     text: "Acaba com a lama da chuva nas áreas comuns do condomínio.",
+    src: "/images/condominio-playground.jpeg",
     placeholder: "Foto — área comum de condomínio com grama sintética",
   },
   {
     href: "/produtos/decorativa/eventos",
     title: "Eventos e Decoração Temática",
     text: "Cores vibrantes e instalação temporária para decoração de eventos.",
+    src: "/images/evento-grama-colorida.jpeg",
     placeholder: "Foto — decoração de evento com grama sintética colorida",
   },
   {
     href: "/produtos/decorativa/piscinas",
     title: "Bordas de Piscina",
     text: "Conforto ao toque descalço e resistência à umidade constante.",
+    src: "/images/piscina-borda.jpeg",
     placeholder: "Foto — borda de piscina com grama sintética",
   },
   {
     href: "/produtos/decorativa/vitrines",
     title: "Vitrines e Ambientes Comerciais",
     text: "Um ponto verde de baixa manutenção para lojas e escritórios.",
+    src: "/images/vitrine-comercial.jpeg",
     placeholder: "Foto — vitrine comercial com grama sintética",
   },
 ];
@@ -92,7 +98,7 @@ export default function Page() {
                 style={{ border: "1px solid var(--border-subtle)", display: "block", background: "var(--surface-card)", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)" }}
               >
                 <div style={{ position: "relative", height: 200 }}>
-                  <PhotoSlot placeholder={card.placeholder} />
+                  <PhotoSlot src={card.src} alt={card.title} placeholder={card.placeholder} />
                 </div>
                 <div style={{ padding: "var(--space-6)", display: "grid", gap: "var(--space-2)" }}>
                   <h3 style={{ fontSize: "var(--text-heading-2)", margin: 0, fontWeight: "var(--fw-bold)" }}>{card.title}</h3>

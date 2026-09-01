@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Jardins e", bold: "Paisagismo" }}
       intro="Substitui a grama natural em jardins residenciais e projetos de paisagismo sem abrir mão do verde o ano inteiro. Sem rega, sem corte e sem desgaste por sol ou chuva — o visual do projeto se mantém como no dia da instalação."
+      heroSrc="/images/jardim-decorativa-instalacao.jpeg"
       heroPlaceholder="Foto — jardim residencial com grama decorativa"
       benefits={[
         { icon: "sprout", title: "Verde o ano todo", text: "Sem estação seca ou período de recuperação — o jardim mantém a cor e a densidade em qualquer clima." },

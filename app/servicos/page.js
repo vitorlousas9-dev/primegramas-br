@@ -31,7 +31,7 @@ export default function Page() {
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "0 var(--gutter-inline)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "var(--space-6)" }}>
           <article style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-blade)", overflow: "hidden", boxShadow: "var(--shadow-sm)" }}>
             <div style={{ position: "relative", height: 240 }}>
-              <PhotoSlot placeholder="Foto — equipe preparando a base ou colando o gramado" />
+              <PhotoSlot src="/images/jardim-decorativa-instalacao.jpeg" alt="Equipe preparando a base e instalando a grama sintética" placeholder="Foto — equipe preparando a base ou colando o gramado" />
             </div>
             <div style={{ padding: "var(--space-8)", display: "grid", gap: "var(--space-4)" }}>
               <span style={{ width: 44, height: 44, borderRadius: "var(--radius-pill)", background: "var(--green-500)", display: "grid", placeItems: "center" }}>
@@ -46,7 +46,7 @@ export default function Page() {
           </article>
           <article style={{ background: "var(--surface-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)" }}>
             <div style={{ position: "relative", height: 240 }}>
-              <PhotoSlot placeholder="Foto — visita técnica, medição da área" />
+              <PhotoSlot src="/images/medicao-tecnica.jpeg" alt="Visita técnica e medição da área para instalação" placeholder="Foto — visita técnica, medição da área" />
             </div>
             <div style={{ padding: "var(--space-8)", display: "grid", gap: "var(--space-4)" }}>
               <span style={{ width: 44, height: 44, borderRadius: "var(--radius-pill)", background: "var(--surface-brand-soft)", display: "grid", placeItems: "center" }}>

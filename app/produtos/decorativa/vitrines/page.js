@@ -13,6 +13,7 @@ export default function Page() {
       lineLabel="Linha Decorativa · Aplicação"
       title={{ light: "Vitrines e", bold: "Ambientes Comerciais" }}
       intro="Lojas, escritórios e vitrines usam a grama sintética para criar um ponto verde de baixa manutenção, tanto em ambientes internos quanto externos, sem o cuidado que a grama natural exigiria em um espaço comercial."
+      heroSrc="/images/vitrine-comercial.jpeg"
       heroPlaceholder="Foto — vitrine comercial com grama sintética"
       benefits={[
         { icon: "clock", title: "Baixa manutenção", text: "Sem rega e sem corte — mantém o visual pronto para atender o público todos os dias." },

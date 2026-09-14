@@ -5,7 +5,7 @@ import Image from "next/image";
 import Icon from "./Icon";
 import { Input, Select, Textarea } from "./fields/Field";
 import { WHATSAPP_URL } from "@/lib/site";
-import { EMPTY_LEAD, validateLead } from "@/lib/lead-validation";
+import { EMPTY_LEAD, MAX, validateLead } from "@/lib/lead-validation";
 
 export const USOS = [
   "Jardim ou área de lazer",
@@ -175,6 +175,7 @@ export default function QuoteForm({ origem = "site" }) {
           label="Nome *"
           name="nome"
           placeholder="Seu nome completo"
+          maxLength={MAX.nome}
           value={values.nome}
           onChange={update("nome")}
           error={errors.nome}
@@ -185,6 +186,7 @@ export default function QuoteForm({ origem = "site" }) {
           name="telefone"
           type="tel"
           placeholder="(11) 90000-0000"
+          maxLength={MAX.telefone}
           value={values.telefone}
           onChange={update("telefone")}
           error={errors.telefone}
@@ -206,6 +208,7 @@ export default function QuoteForm({ origem = "site" }) {
           label="Cidade / UF *"
           name="cidade"
           placeholder="São Paulo — SP"
+          maxLength={MAX.cidade}
           value={values.cidade}
           onChange={update("cidade")}
           error={errors.cidade}
@@ -218,6 +221,7 @@ export default function QuoteForm({ origem = "site" }) {
           name="email"
           type="email"
           placeholder="nome@empresa.com.br"
+          maxLength={MAX.email}
           value={values.email}
           onChange={update("email")}
           error={errors.email}
@@ -229,6 +233,7 @@ export default function QuoteForm({ origem = "site" }) {
           placeholder="120"
           suffix="m²"
           inputMode="numeric"
+          maxLength={MAX.metragem}
           value={values.metragem}
           onChange={update("metragem")}
           hint="Se não souber, informamos na visita técnica."
@@ -240,6 +245,7 @@ export default function QuoteForm({ origem = "site" }) {
         name="detalhes"
         placeholder="Instalação nova ou troca, condição do piso (concreto, brita, terra), prazo desejado."
         rows={3}
+        maxLength={MAX.detalhes}
         value={values.detalhes}
         onChange={update("detalhes")}
       />
@@ -247,6 +253,7 @@ export default function QuoteForm({ origem = "site" }) {
       {/* Isca para bots: escondido de quem vê a página, mas preenchido por scripts. */}
       <input
         type="text"
+        name="website"
         tabIndex={-1}
         autoComplete="off"
         aria-hidden="true"

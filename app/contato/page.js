@@ -1,7 +1,7 @@
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Icon from "@/components/Icon";
-import { Input, Select, Textarea } from "@/components/fields/Field";
+import QuoteForm from "@/components/QuoteForm";
 import { WHATSAPP_URL, WHATSAPP_DISPLAY, PHONE_URL, PHONE_DISPLAY, EMAIL, SITE_URL } from "@/lib/site";
 
 export const metadata = {
@@ -9,17 +9,6 @@ export const metadata = {
   title: "Contato",
   description: "Solicite um orçamento de grama sintética sem custo. Atendimento por telefone, WhatsApp ou e-mail, com visita técnica antes da instalação.",
 };
-
-const USOS = [
-  "Jardim ou área de lazer",
-  "Condomínio",
-  "Escola ou creche",
-  "Playground",
-  "Quadra poliesportiva",
-  "Campo de futebol",
-  "Evento ou vitrine",
-  "Outro",
-];
 
 function ContactRow({ href, iconSlot, title, subtitle, mono = false }) {
   return (
@@ -65,56 +54,7 @@ export default function Page() {
             alignItems: "start",
           }}
         >
-          <form
-            style={{
-              background: "var(--surface-sunken)",
-              border: "1px solid var(--border-subtle)",
-              borderRadius: "var(--radius-blade)",
-              padding: "var(--space-10)",
-              display: "grid",
-              gap: "var(--space-5)",
-            }}
-          >
-            <span className="pg-eyebrow">Formulário de orçamento</span>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--space-5)" }}>
-              <Input label="Nome" name="nome" placeholder="Seu nome completo" />
-              <Input label="Telefone / WhatsApp" name="telefone" placeholder="(11) 90000-0000" />
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--space-5)" }}>
-              <Input label="E-mail" name="email" type="email" placeholder="nome@empresa.com.br" />
-              <Input label="Cidade / UF" name="cidade" placeholder="São Paulo — SP" />
-            </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--space-5)" }}>
-              <Select label="Finalidade" name="finalidade" placeholder="Selecione o uso" options={USOS} />
-              <Input label="Metragem aproximada" name="metragem" placeholder="120" suffix="m²" hint="Se não souber, informamos na visita técnica." />
-            </div>
-            <Textarea
-              label="Sobre o espaço"
-              name="detalhes"
-              placeholder="Instalação nova ou troca, condição do piso (concreto, brita, terra), prazo desejado."
-              rows={4}
-            />
-            <button
-              type="button"
-              style={{
-                height: "var(--control-h-lg)",
-                border: 0,
-                borderRadius: "var(--radius-pill)",
-                background: "var(--green-500)",
-                color: "#fff",
-                fontFamily: "var(--font-body)",
-                fontSize: "var(--text-base)",
-                fontWeight: "var(--fw-semibold)",
-                cursor: "pointer",
-                boxShadow: "var(--shadow-brand)",
-              }}
-            >
-              Solicitar orçamento
-            </button>
-            <p style={{ fontSize: "var(--text-xs)", color: "var(--text-muted)", lineHeight: "var(--lh-relaxed)" }}>
-              Proposta com validade de 7 dias. Aceitamos diversas formas de pagamento e parcelamento.
-            </p>
-          </form>
+          <QuoteForm origem="contato" />
 
           <div style={{ display: "grid", gap: "var(--space-6)", alignContent: "start" }}>
             <div

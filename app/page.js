@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import QuoteCTA from "@/components/QuoteCTA";
+import QuoteSection from "@/components/QuoteSection";
 import BenefitCard from "@/components/BenefitCard";
 import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
@@ -63,8 +63,8 @@ export default function Home() {
               Há 20 anos transformando espaços com um produto durável, sustentável e com a aparência natural que você precisa.
             </p>
             <div style={{ display: "flex", gap: "var(--space-3)", flexWrap: "wrap", pointerEvents: "auto", marginTop: "var(--space-2)" }}>
-              <Link
-                href="/contato"
+              <a
+                href="#orcamento"
                 style={{
                   border: 0,
                   display: "flex",
@@ -83,7 +83,7 @@ export default function Home() {
               >
                 Solicitar Orçamento
                 <Icon name="arrow-right" size={18} color="#fff" />
-              </Link>
+              </a>
               <Link
                 href="/produtos"
                 style={{
@@ -288,7 +288,7 @@ export default function Home() {
 
       <TestimonialsCarousel />
 
-      <QuoteCTA />
+      <QuoteSection origem="homepage" />
       <SiteFooter />
     </>
   );

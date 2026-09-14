@@ -20,6 +20,7 @@ import {
   Sun,
   Trophy,
   Users,
+  X,
 } from "lucide-react";
 
 // Explicit imports (rather than a wildcard lookup) keep the bundle to just
@@ -46,6 +47,7 @@ const ICONS = {
   sun: Sun,
   trophy: Trophy,
   users: Users,
+  x: X,
 };
 
 export default function Icon({ name, size = 20, color, style }) {

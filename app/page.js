@@ -7,18 +7,10 @@ import PhotoSlot from "@/components/PhotoSlot";
 import Icon from "@/components/Icon";
 import StarRating from "@/components/StarRating";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
-import { SITE_URL } from "@/lib/site";
-
-const PT_SITE_URL = "https://www.primegramas.pt";
+import { getHreflangAlternates } from "@/lib/hreflang";
 
 export const metadata = {
-  alternates: {
-    canonical: "/",
-    languages: {
-      "pt-BR": SITE_URL,
-      "pt-PT": PT_SITE_URL,
-    },
-  },
+  alternates: getHreflangAlternates("/"),
 };
 
 const arrowLinkStyle = {

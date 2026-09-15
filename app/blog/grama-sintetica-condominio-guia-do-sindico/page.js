@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BlogLayout from "@/components/BlogLayout";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-posts";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const post = getPostBySlug("grama-sintetica-condominio-guia-do-sindico");
 
@@ -174,9 +175,7 @@ export default function Page() {
           assembleia — incluindo especificação do produto, prazo e garantia por escrito.{" "}
           <Link href="/produtos/decorativa/condominios">Veja aplicações em condomínio</Link> ou fale com a equipe
           comercial pelo{" "}
-          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
-            WhatsApp
-          </a>
+          <a href={WHATSAPP_URL}>WhatsApp</a>
           .
         </p>
       </div>

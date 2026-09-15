@@ -14,15 +14,20 @@ function formatDate(iso) {
 }
 
 export default function BlogLayout({ post, faqs, related, children }) {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  // Um FAQPage sem perguntas é marcação inválida para o Google, e a seção vazia
+  // ficaria só com o título — os dois aparecem apenas quando há FAQs.
+  const hasFaqs = faqs?.length > 0;
+  const faqJsonLd = hasFaqs
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -46,7 +51,7 @@ export default function BlogLayout({ post, faqs, related, children }) {
       <SiteHeader active="blog" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
 
       <section style={{ padding: "var(--space-12) 0 0" }}>
         <div style={{ maxWidth: "var(--container-max)", margin: "0 auto", padding: "0 var(--gutter-inline)" }}>
@@ -96,22 +101,24 @@ export default function BlogLayout({ post, faqs, related, children }) {
         </div>
       </section>
 
-      <section style={{ padding: "var(--space-16) 0 0" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 var(--gutter-inline)" }}>
-          <span className="pg-eyebrow">Perguntas frequentes</span>
-          <h2 style={{ fontSize: "var(--text-display-3)", margin: "var(--space-3) 0 var(--space-6)", fontWeight: "var(--fw-light)" }}>
-            Dúvidas <span style={{ fontWeight: "var(--fw-bold)" }}>rápidas</span> sobre o assunto
-          </h2>
-          <div>
-            {faqs.map((f, i) => (
-              <details key={i} className="pg-faq-item">
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
+      {hasFaqs && (
+        <section style={{ padding: "var(--space-16) 0 0" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 var(--gutter-inline)" }}>
+            <span className="pg-eyebrow">Perguntas frequentes</span>
+            <h2 style={{ fontSize: "var(--text-display-3)", margin: "var(--space-3) 0 var(--space-6)", fontWeight: "var(--fw-light)" }}>
+              Dúvidas <span style={{ fontWeight: "var(--fw-bold)" }}>rápidas</span> sobre o assunto
+            </h2>
+            <div>
+              {faqs.map((f, i) => (
+                <details key={i} className="pg-faq-item">
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {related?.length > 0 && (
         <section style={{ padding: "var(--space-20) 0 0" }}>

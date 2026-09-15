@@ -1,4 +1,4 @@
-import { SITE_URL, EMAIL } from "@/lib/site";
+import { SITE_URL, EMAIL, PHONE_E164 } from "@/lib/site";
 
 export default function LocalBusinessJsonLd() {
   const data = {
@@ -8,7 +8,7 @@ export default function LocalBusinessJsonLd() {
     description:
       "Fornecimento e instalação de grama sintética há 20 anos, para jardins, condomínios, escolas, clubes e campos esportivos.",
     url: SITE_URL,
-    telephone: "+551141124329",
+    telephone: PHONE_E164,
     email: EMAIL,
     image: `${SITE_URL}/assets/logo-vertical-new.png`,
     priceRange: "R$R$",
@@ -23,7 +23,6 @@ export default function LocalBusinessJsonLd() {
       "@type": "City",
       name: "São Paulo",
     },
-    sameAs: [],
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

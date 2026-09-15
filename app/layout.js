@@ -34,7 +34,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Primegramas — Grama Sintética para Jardins e Desportos",
+    default: "Primegramas — Grama Sintética para Jardins e Esportes",
     template: "%s — Primegramas",
   },
   description:

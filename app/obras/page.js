@@ -2,9 +2,10 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import QuoteCTA from "@/components/QuoteCTA";
 import PhotoSlot from "@/components/PhotoSlot";
+import { getHreflangAlternates } from "@/lib/hreflang";
 
 export const metadata = {
-  alternates: { canonical: "/obras" },
+  alternates: getHreflangAlternates("/obras"),
   title: "Obras",
   description: "Uma seleção de obras de instalação de grama sintética em condomínios, escolas, clubes e residências entregues pela Primegramas.",
 };

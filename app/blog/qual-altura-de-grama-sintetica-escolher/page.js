@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BlogLayout from "@/components/BlogLayout";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-posts";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const post = getPostBySlug("qual-altura-de-grama-sintetica-escolher");
 
@@ -171,9 +172,7 @@ export default function Page() {
         <p>
           Conte onde a grama vai ser instalada e nós indicamos a altura certa — e mandamos amostra para você sentir
           o fio antes de decidir. Fale pelo{" "}
-          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
-            WhatsApp
-          </a>
+          <a href={WHATSAPP_URL}>WhatsApp</a>
           .
         </p>
       </div>

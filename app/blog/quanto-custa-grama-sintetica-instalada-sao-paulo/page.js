@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BlogLayout from "@/components/BlogLayout";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-posts";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const post = getPostBySlug("quanto-custa-grama-sintetica-instalada-sao-paulo");
 
@@ -214,7 +215,7 @@ export default function Page() {
         <b>Peça o valor exato</b>
         <p>
           A Primegramas faz visita técnica antes de fechar a proposta — sem custo e sem compromisso. Envie a
-          metragem pelo <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">WhatsApp</a> ou{" "}
+          metragem pelo <a href={WHATSAPP_URL}>WhatsApp</a> ou{" "}
           <Link href="/contato">peça um orçamento</Link> e receba a faixa de preço no mesmo dia.
         </p>
       </div>

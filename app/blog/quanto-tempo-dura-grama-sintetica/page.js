@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BlogLayout from "@/components/BlogLayout";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-posts";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const post = getPostBySlug("quanto-tempo-dura-grama-sintetica");
 
@@ -162,9 +163,7 @@ export default function Page() {
         <b>Sua grama já tem alguns anos?</b>
         <p>
           Se você não sabe se dá para recuperar ou se é hora de trocar, mande uma foto pelo{" "}
-          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
-            WhatsApp
-          </a>{" "}
+          <a href={WHATSAPP_URL}>WhatsApp</a>{" "}
           — em muitos casos uma escovação profissional resolve.
         </p>
       </div>

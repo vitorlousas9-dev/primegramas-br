@@ -3,9 +3,10 @@ import SiteFooter from "@/components/SiteFooter";
 import Icon from "@/components/Icon";
 import QuoteForm from "@/components/QuoteForm";
 import { WHATSAPP_URL, WHATSAPP_DISPLAY, PHONE_URL, PHONE_DISPLAY, EMAIL, SITE_URL } from "@/lib/site";
+import { getHreflangAlternates } from "@/lib/hreflang";
 
 export const metadata = {
-  alternates: { canonical: "/contato" },
+  alternates: getHreflangAlternates("/contato"),
   title: "Contato",
   description: "Solicite um orçamento de grama sintética sem custo. Atendimento por telefone, WhatsApp ou e-mail, com visita técnica antes da instalação.",
 };

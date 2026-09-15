@@ -4,9 +4,10 @@ import QuoteCTA from "@/components/QuoteCTA";
 import PhotoSlot from "@/components/PhotoSlot";
 import BenefitCard from "@/components/BenefitCard";
 import Icon from "@/components/Icon";
+import { getHreflangAlternates } from "@/lib/hreflang";
 
 export const metadata = {
-  alternates: { canonical: "/sobre" },
+  alternates: getHreflangAlternates("/sobre"),
   title: "Sobre",
   description: "20 anos de fornecimento e instalação de grama sintética. Conheça a trajetória, os diferenciais e a equipe técnica da Primegramas.",
 };

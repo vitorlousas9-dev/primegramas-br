@@ -165,7 +165,7 @@ export default function SiteFooter() {
         }}
       >
         <span className="pg-tagline" style={{ color: "var(--stone-600)" }}>
-          Grama sintética para jardins e desportos
+          Grama sintética para jardins e esportes
         </span>
         <span style={{ fontSize: "var(--text-xs)", color: "var(--stone-600)" }}>© 2026 Primegramas</span>
       </div>

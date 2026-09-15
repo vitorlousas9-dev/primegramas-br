@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BlogLayout from "@/components/BlogLayout";
 import { getPostBySlug, getRelatedPosts } from "@/lib/blog-posts";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const post = getPostBySlug("campo-society-grama-sintetica-custo-e-medidas");
 
@@ -176,9 +177,7 @@ export default function Page() {
           A Primegramas executa{" "}
           <Link href="/produtos/esportiva/campos">campos e quadras com linha esportiva</Link> de 20mm a 50mm, com
           visita técnica para avaliar terreno e drenagem antes da proposta. Envie as medidas do seu espaço pelo{" "}
-          <a href="https://wa.me/5511932245642?text=Ol%C3%A1%20vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento">
-            WhatsApp
-          </a>
+          <a href={WHATSAPP_URL}>WhatsApp</a>
           .
         </p>
       </div>

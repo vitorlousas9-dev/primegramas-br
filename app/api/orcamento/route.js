@@ -76,7 +76,8 @@ function originPermitida(origin) {
   } catch {
     return false;
   }
-  if (host === SITE_HOST || host === SITE_HOST.replace(/^www\./, "")) return true;
+  const apex = SITE_HOST.replace(/^www\./, "");
+  if (host === apex || host === `www.${apex}`) return true;
   // Qualquer `.vercel.app` deixaria passar o deploy de outra pessoa; só valem
   // os deste projeto, que a Vercel expõe em runtime.
   const vercel = [process.env.VERCEL_URL, process.env.VERCEL_BRANCH_URL, process.env.VERCEL_PROJECT_PRODUCTION_URL];

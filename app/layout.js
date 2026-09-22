@@ -39,11 +39,12 @@ export const metadata = {
   },
   description:
     "Fornecimento e instalação de grama sintética há 20 anos. Soluções para jardins, condomínios, escolas, clubes e campos esportivos, no Brasil e em Portugal.",
+  // Sem `url`: definido aqui, todas as páginas diziam ao Facebook e ao WhatsApp
+  // que eram a home. Sem ele, cada compartilhamento usa o endereço da própria página.
   openGraph: {
     type: "website",
     locale: "pt_BR",
     siteName: "Primegramas",
-    url: SITE_URL,
   },
 };
 

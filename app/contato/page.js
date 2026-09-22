@@ -79,7 +79,7 @@ export default function Page() {
               />
               <ContactRow href={PHONE_URL} iconSlot={<Icon name="phone" size={20} color="var(--green-600)" />} title="Telefone" subtitle={PHONE_DISPLAY} mono />
               <ContactRow href={`mailto:${EMAIL}`} iconSlot={<Icon name="mail" size={20} color="var(--green-600)" />} title="E-mail" subtitle={EMAIL} />
-              <ContactRow href={SITE_URL} iconSlot={<Icon name="arrow-right" size={20} color="var(--green-600)" />} title="Site" subtitle="www.primegramas.com.br" />
+              <ContactRow href={SITE_URL} iconSlot={<Icon name="arrow-right" size={20} color="var(--green-600)" />} title="Site" subtitle="primegramas.com.br" />
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "var(--space-5)" }}>
